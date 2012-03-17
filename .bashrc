@@ -6,7 +6,9 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # User specific aliases and functions
+PAGER=/usr/bin/most
+alias ls='ls -la --color=auto'
+export GREP_COLOR="1;33"
+alias grep='grep --color=auto'
+set show-all-if-ambiguous on
 
-alias ls='ls -la'
-
-# Test
